@@ -10,32 +10,16 @@
 
   <body>
     <div class="container mx-auto px-4 pt-4 text-center">
-      <h1 class="text-3xl font-bold underline underline-offset-8">Welcome to Tauri!</h1>
+      <h1 class="text-3xl font-bold underline underline-offset-8">To-Do List</h1>
 
-      <div class="flex justify-center">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-
-      <p>Click on the Tauri logo to learn more about the framework.</p>
-
-      <form class="flex justify-center" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
+      <form class="flex justify-center" id="task-form">
+        <input id="task-input" placeholder="Enter a task..." />
+        <button type="submit">Add</button>
       </form>
 
-      <p id="greet-msg"></p>
+      <ul id="task-list">
+      </ul>
+
     </div>
   </body>
 </html>
