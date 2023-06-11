@@ -9,16 +9,21 @@
   </head>
 
   <body>
-    <div class="container mx-auto px-4 pt-4 text-center">
-      <h1 class="text-3xl font-bold underline underline-offset-8">To-Do List</h1>
+    <div class="container mx-auto px-4 pt-4">
 
-      <form class="flex justify-center" id="task-form">
-        <input id="task-input" placeholder="Enter a task..." />
-        <button type="submit">Add</button>
-      </form>
+      <div class="flex flex-col justify-center space-y-2">
+      
+        <h1 class="text-center text-3xl font-bold">To-Do List</h1>
 
-      <ul id="task-list">
-      </ul>
+        <form class="flex justify-center" id="task-form">
+          <input id="task-input" placeholder="Enter a task..." />
+          <button type="submit">Add</button>
+        </form>
+
+        <ul id="task-list">
+        </ul>
+      
+      </div>
 
     </div>
   </body>

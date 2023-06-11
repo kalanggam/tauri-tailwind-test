@@ -5,11 +5,11 @@ let taskListEl;
 
 async function addTask() {
   // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-  let text = await invoke("add_task", { task: taskInputEl.value });
-  if (text === '') {
-    console.log("[LOG] No text input was given so a task was not created");
+  if (taskInputEl.value === '') {
+    console.log("[LOG] Task not created - no input given");
   }
   else {
+    let text = await invoke("add_task", { task: taskInputEl.value });
     let item = document.createElement("li");
     item.appendChild(document.createTextNode(text));
     taskListEl.insertBefore(item, taskListEl.children[0]);
